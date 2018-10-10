@@ -2,6 +2,7 @@ package com.bdmc.myjpa.controller;
 
 import java.util.List;
 
+import com.bdmc.myjpa.Utils.*;
 import com.bdmc.myjpa.entity.*;
 import com.bdmc.myjpa.services.UserService;
 
@@ -10,6 +11,7 @@ import org.springframework.data.domain.Example;
 import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -28,8 +30,8 @@ public class JPAController {
 
     /** * 查询用户信息 * */
     @RequestMapping(value = "/list", method = RequestMethod.GET)
-    public List<User> list() {
-        return _userSvs.findAll();
+    public Msg list() {
+        return  ResultUtil.success(_userSvs.findAll());
     }
 
         /** * 查询用户信息 * */
