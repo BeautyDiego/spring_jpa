@@ -32,7 +32,7 @@ public class UserService implements IUserService {
         List<User>  resultList = query.getResultList();
         System.out.println(resultList);
       // return userjpa.findAll();
-       return resultList;
+       return resultList; 
     }
 
     @Override
