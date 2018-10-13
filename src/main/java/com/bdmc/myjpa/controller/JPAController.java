@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import com.bdmc.myjpa.Utils.*;
 
 @RestController
 @RequestMapping(value = "/user")
@@ -31,21 +32,26 @@ public class JPAController {
     /** * 查询用户信息 * */
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public Msg list() {
-        return  ResultUtil.success(_userSvs.findAll());
+        return ResultUtil.success(_userSvs.findAll());
     }
 
-        /** * 查询用户信息 * */
-        @RequestMapping(value = "/find", method = RequestMethod.GET)
-        public User find(User user) {
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    public Msg login() {
+        String token = WebTokenUtil.createJWT("1001", "huanglu",  System.currentTimeMillis()+10000);
+        return ResultUtil.success(token);
+    }
 
-            ExampleMatcher matcher = ExampleMatcher.matching()
-            .withMatcher("name", match -> match.startsWith())//模糊查询匹配开头，即{username}%
-            .withMatcher("address" ,match -> match.contains())//全部模糊查询，即%{address}%
-            .withIgnorePaths("password");//忽略字段，即不管password是什么值都不加入查询条件
-            Example<User> example = Example.of(user ,matcher);
-
-            return _userSvs.findOne(example);
-        }
+    /** * 查询用户信息 * */
+    @RequestMapping(value = "/find", method = RequestMethod.GET)
+    public User find(User user) {
+        ExampleMatcher matcher = ExampleMatcher.matching().withMatcher("name", match -> match.startsWith())// 模糊查询匹配开头，即{username}%
+                .withMatcher("address", match -> match.contains())// 全部模糊查询，即%{address}%
+                .withIgnorePaths("password");// 忽略字段，即不管password是什么值都不加入查询条件
+        Example<User> example = Example.of(user, matcher);
+        int i = 3/0;
+        
+        return _userSvs.findOne(example);
+    }
 
     /**
      * 删除用户信息，删除信息后返回剩余信息

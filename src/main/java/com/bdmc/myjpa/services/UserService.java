@@ -42,7 +42,7 @@ public class UserService implements IUserService {
 
 	@Override
 	public User findOneById(long id) {
-
+        
 		return userjpa.findById(id).orElse(null);
 	}
 
