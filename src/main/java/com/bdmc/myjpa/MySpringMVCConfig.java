@@ -35,10 +35,8 @@ public class MySpringMVCConfig implements WebMvcConfigurer {
     private class SessionHandlerInterceptor implements HandlerInterceptor {
 
         @Override
-        public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
-           
+        public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {         
             boolean handleResult = false;
-
             String token = request.getHeader("token");
             if (token == null || token.isEmpty()) {//   fanhui 401
                 PrintWriter writer = null;
