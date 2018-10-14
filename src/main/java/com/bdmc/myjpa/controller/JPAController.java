@@ -1,7 +1,9 @@
 package com.bdmc.myjpa.controller;
 
 import java.util.List;
+import java.util.Map;
 
+import com.alibaba.fastjson.JSONObject;
 import com.bdmc.myjpa.Utils.*;
 import com.bdmc.myjpa.entity.*;
 import com.bdmc.myjpa.services.UserService;
@@ -9,11 +11,13 @@ import com.bdmc.myjpa.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.ExampleMatcher;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import com.bdmc.myjpa.Utils.*;
+
 
 @RestController
 @RequestMapping(value = "/user")
@@ -30,10 +34,25 @@ public class JPAController {
     }
 
     /** * 查询用户信息 * */
-    @RequestMapping(value = "/list", method = RequestMethod.GET)
-    public Msg list() {
+    @RequestMapping(value = "/list", method = RequestMethod.POST)
+    public Msg list(User user) {
         return ResultUtil.success(_userSvs.findAll());
     }
+
+
+    
+    
+    /** * 查询用户信息 * */
+    @RequestMapping(value = "/list0", method = RequestMethod.POST)
+    public Msg list1(@RequestBody JSONObject jsonParam) {
+        return ResultUtil.success(_userSvs.findAll());
+    } 
+
+    /** * 查询用户信息 * */
+    @RequestMapping(value = "/list1", method = RequestMethod.POST)
+    public Msg list1(@RequestBody Map<String,Object> reqMap) {
+        return ResultUtil.success(_userSvs.findAll());
+    } 
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public Msg login() {
@@ -48,7 +67,7 @@ public class JPAController {
                 .withMatcher("address", match -> match.contains())// 全部模糊查询，即%{address}%
                 .withIgnorePaths("password");// 忽略字段，即不管password是什么值都不加入查询条件
         Example<User> example = Example.of(user, matcher);
-        int i = 3/0;
+       // int i = 3/0;
         
         return _userSvs.findOne(example);
     }

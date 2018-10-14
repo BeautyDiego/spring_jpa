@@ -1,0 +1,276 @@
+2018-10-13 00:25:33,040 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 3381 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-13 00:25:33,041 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-13 00:25:33,042 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-13 00:25:34,955 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 1.983 seconds (JVM running for 77.351)
+2018-10-13 00:25:46,488 ERROR (GlobalExceptionHandler.java:38)- GlobalExceptionHandler,捕获异常:/ by zero;eString:java.lang.ArithmeticException: / by zero
+	at com.bdmc.myjpa.controller.JPAController.find(JPAController.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-10-13 00:38:54,037 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 3601 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-13 00:38:54,040 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-13 00:38:54,043 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-13 00:39:04,643 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 11.358 seconds (JVM running for 12.268)
+2018-10-13 00:40:56,187 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 3601 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-13 00:40:56,188 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-13 00:40:56,189 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-13 00:40:58,093 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 1.986 seconds (JVM running for 125.714)
+2018-10-13 00:41:45,370 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 3601 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-13 00:41:45,371 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-13 00:41:45,371 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-13 00:41:47,126 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 1.805 seconds (JVM running for 174.746)
+2018-10-13 00:46:04,948 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 3601 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-13 00:46:04,951 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-13 00:46:04,953 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-13 00:46:06,959 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 2.084 seconds (JVM running for 434.571)
+2018-10-13 00:53:51,927 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 3601 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-13 00:53:51,928 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-13 00:53:51,934 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-13 00:53:53,776 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 31.911 seconds (JVM running for 901.388)
+2018-10-13 22:00:14,195 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 705 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-13 22:00:14,198 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-13 22:00:14,201 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-13 22:00:44,722 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 826 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-13 22:00:44,732 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-13 22:00:44,748 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-13 22:00:53,801 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 9.975 seconds (JVM running for 11.08)
+2018-10-13 22:01:48,846 ERROR (GlobalExceptionHandler.java:38)- GlobalExceptionHandler,捕获异常:/ by zero;eString:java.lang.ArithmeticException: / by zero
+	at com.bdmc.myjpa.controller.JPAController.find(JPAController.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-10-13 22:02:01,093 ERROR (GlobalExceptionHandler.java:38)- GlobalExceptionHandler,捕获异常:/ by zero;eString:java.lang.ArithmeticException: / by zero
+	at com.bdmc.myjpa.controller.JPAController.find(JPAController.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-10-13 22:02:34,361 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 826 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-13 22:02:34,362 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-13 22:02:34,363 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-13 22:02:35,778 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 1.543 seconds (JVM running for 113.056)
+2018-10-13 22:47:05,623 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 826 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-13 22:47:05,625 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-13 22:47:05,628 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-13 22:47:07,834 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 2.313 seconds (JVM running for 2785.017)
+2018-10-13 22:47:10,622 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 826 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-13 22:47:10,623 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-13 22:47:10,623 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-13 22:47:11,869 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 1.284 seconds (JVM running for 2789.051)
+2018-10-13 22:48:44,221 INFO (MySpringMVCConfig.java:46)- 请求日志拦截：uri=/user/list, method=POST, request=0
+2018-10-13 22:49:28,681 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 826 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-13 22:49:28,682 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-13 22:49:28,683 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-13 22:49:29,936 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 1.304 seconds (JVM running for 2927.109)
+2018-10-13 22:53:40,399 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 826 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-13 22:53:40,400 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-13 22:53:40,400 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-13 22:53:41,577 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 1.221 seconds (JVM running for 3178.743)
+2018-10-13 22:54:02,484 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 826 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-13 22:54:02,485 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-13 22:54:02,485 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-13 22:54:03,553 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 1.102 seconds (JVM running for 3200.719)
+2018-10-13 22:54:22,502 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 826 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-13 22:54:22,502 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-13 22:54:22,503 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-13 22:54:24,007 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 1.549 seconds (JVM running for 3221.172)
+2018-10-13 22:54:40,918 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 826 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-13 22:54:40,918 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-13 22:54:40,919 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-13 22:54:43,805 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 2.928 seconds (JVM running for 3240.969)
+2018-10-13 22:57:14,745 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 826 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-13 22:57:14,746 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-13 22:57:14,747 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-13 22:57:16,763 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 2.07 seconds (JVM running for 3393.923)
+2018-10-13 22:57:50,606 INFO (MySpringMVCConfig.java:46)- 请求日志拦截：uri=/user/list, method=POST, request=0
+2018-10-13 22:57:50,622 INFO (WebLogAspect.java:37)- 请求地址 : http://localhost:8080/user/list
+2018-10-13 22:57:50,623 INFO (WebLogAspect.java:38)- HTTP METHOD : POST
+2018-10-13 22:57:50,623 INFO (WebLogAspect.java:39)- IP : 0:0:0:0:0:0:0:1
+2018-10-13 22:57:50,625 INFO (WebLogAspect.java:40)- CLASS_METHOD : com.bdmc.myjpa.controller.JPAController.list
+2018-10-13 22:57:50,625 INFO (WebLogAspect.java:42)- 参数 : []
+2018-10-13 22:57:50,654 INFO (WebLogAspect.java:56)- 耗时 : 33
+2018-10-13 22:57:50,655 INFO (WebLogAspect.java:49)- 返回值 : com.bdmc.myjpa.Utils.Msg@69b5f67d
+2018-10-13 23:04:47,771 INFO (MySpringMVCConfig.java:46)- 请求日志拦截：uri=/user/list, method=POST, request=0
+2018-10-13 23:04:47,776 INFO (WebLogAspect.java:37)- 请求地址 : http://localhost:8080/user/list
+2018-10-13 23:04:47,776 INFO (WebLogAspect.java:38)- HTTP METHOD : POST
+2018-10-13 23:04:47,777 INFO (WebLogAspect.java:39)- IP : 0:0:0:0:0:0:0:1
+2018-10-13 23:04:47,778 INFO (WebLogAspect.java:40)- CLASS_METHOD : com.bdmc.myjpa.controller.JPAController.list
+2018-10-13 23:05:52,368 INFO (WebLogAspect.java:42)- 参数 : []
+2018-10-13 23:05:52,371 INFO (WebLogAspect.java:56)- 耗时 : 64595
+2018-10-13 23:05:52,372 INFO (WebLogAspect.java:49)- 返回值 : com.bdmc.myjpa.Utils.Msg@57514c5
+2018-10-13 23:10:11,875 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 826 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-13 23:10:11,875 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-13 23:10:11,875 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-13 23:10:13,364 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 1.525 seconds (JVM running for 3883.662)
+2018-10-13 23:10:19,167 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 826 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-13 23:10:19,167 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-13 23:10:19,167 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-13 23:10:20,551 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 1.42 seconds (JVM running for 3890.848)
+2018-10-13 23:10:28,390 INFO (MySpringMVCConfig.java:46)- 请求日志拦截：uri=/user/list, method=POST, request=0
+2018-10-13 23:10:28,400 INFO (WebLogAspect.java:38)- 请求地址 : http://localhost:8080/user/list
+2018-10-13 23:10:28,400 INFO (WebLogAspect.java:39)- HTTP METHOD : POST
+2018-10-13 23:10:28,400 INFO (WebLogAspect.java:40)- IP : 0:0:0:0:0:0:0:1
+2018-10-13 23:10:28,402 INFO (WebLogAspect.java:41)- CLASS_METHOD : com.bdmc.myjpa.controller.JPAController.list
+2018-10-13 23:10:28,402 INFO (WebLogAspect.java:43)- 参数 : []
+2018-10-13 23:10:28,424 INFO (WebLogAspect.java:57)- 耗时 : 25
+2018-10-13 23:10:28,429 INFO (WebLogAspect.java:50)- 返回值 : {"code":200,"data":[],"msg":"请求成功"}
+2018-10-13 23:11:30,504 INFO (MySpringMVCConfig.java:46)- 请求日志拦截：uri=/user/list, method=POST, request=0
+2018-10-13 23:11:30,507 INFO (WebLogAspect.java:38)- 请求地址 : http://localhost:8080/user/list
+2018-10-13 23:11:30,508 INFO (WebLogAspect.java:39)- HTTP METHOD : POST
+2018-10-13 23:11:30,508 INFO (WebLogAspect.java:40)- IP : 0:0:0:0:0:0:0:1
+2018-10-13 23:11:30,509 INFO (WebLogAspect.java:41)- CLASS_METHOD : com.bdmc.myjpa.controller.JPAController.list

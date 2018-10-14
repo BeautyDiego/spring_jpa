@@ -1,81 +1,164 @@
-2018-10-13 00:25:33,040 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 3381 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
-2018-10-13 00:25:33,041 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
-2018-10-13 00:25:33,042 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
-2018-10-13 00:25:34,955 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 1.983 seconds (JVM running for 77.351)
-2018-10-13 00:25:46,488 ERROR (GlobalExceptionHandler.java:38)- GlobalExceptionHandler,捕获异常:/ by zero;eString:java.lang.ArithmeticException: / by zero
-	at com.bdmc.myjpa.controller.JPAController.find(JPAController.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-
-2018-10-13 00:38:54,037 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 3601 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
-2018-10-13 00:38:54,040 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
-2018-10-13 00:38:54,043 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
-2018-10-13 00:39:04,643 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 11.358 seconds (JVM running for 12.268)
-2018-10-13 00:40:56,187 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 3601 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
-2018-10-13 00:40:56,188 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
-2018-10-13 00:40:56,189 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
-2018-10-13 00:40:58,093 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 1.986 seconds (JVM running for 125.714)
-2018-10-13 00:41:45,370 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 3601 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
-2018-10-13 00:41:45,371 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
-2018-10-13 00:41:45,371 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
-2018-10-13 00:41:47,126 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 1.805 seconds (JVM running for 174.746)
-2018-10-13 00:46:04,948 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 3601 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
-2018-10-13 00:46:04,951 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
-2018-10-13 00:46:04,953 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
-2018-10-13 00:46:06,959 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 2.084 seconds (JVM running for 434.571)
-2018-10-13 00:53:51,927 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 3601 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
-2018-10-13 00:53:51,928 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
-2018-10-13 00:53:51,934 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
-2018-10-13 00:53:53,776 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 31.911 seconds (JVM running for 901.388)
+2018-10-14 11:47:21,131 INFO (WebLogAspect.java:43)- 参数 : []
+2018-10-14 11:47:21,244 INFO (WebLogAspect.java:57)- 耗时 : 45350737
+2018-10-14 11:47:21,246 INFO (WebLogAspect.java:50)- 返回值 : {"code":200,"data":[],"msg":"请求成功"}
+2018-10-14 11:52:04,630 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 826 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-14 11:52:04,631 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-14 11:52:04,632 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-14 11:52:06,713 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 2.169 seconds (JVM running for 5047.961)
+2018-10-14 11:52:17,426 INFO (MySpringMVCConfig.java:46)- 请求日志拦截：uri=/user/list, method=POST, request=0
+2018-10-14 11:52:17,435 INFO (WebLogAspect.java:41)- 请求地址 : http://localhost:8080/user/list
+2018-10-14 11:52:17,436 INFO (WebLogAspect.java:42)- HTTP METHOD : POST
+2018-10-14 11:52:19,949 INFO (WebLogAspect.java:43)- IP : 0:0:0:0:0:0:0:1
+2018-10-14 11:52:20,735 INFO (WebLogAspect.java:44)- CLASS_METHOD : com.bdmc.myjpa.controller.JPAController.list
+2018-10-14 11:52:20,945 INFO (WebLogAspect.java:46)- 参数 : []
+2018-10-14 11:52:34,102 INFO (WebLogAspect.java:59)- 参数 : []
+2018-10-14 11:52:37,454 INFO (WebLogAspect.java:73)- 耗时 : 20019
+2018-10-14 11:52:37,456 INFO (WebLogAspect.java:66)- 返回值 : {"code":200,"data":[],"msg":"请求成功"}
+2018-10-14 11:52:58,889 INFO (MySpringMVCConfig.java:46)- 请求日志拦截：uri=/user/list, method=POST, request=0
+2018-10-14 11:52:58,892 INFO (WebLogAspect.java:41)- 请求地址 : http://localhost:8080/user/list
+2018-10-14 11:52:58,893 INFO (WebLogAspect.java:42)- HTTP METHOD : POST
+2018-10-14 11:53:02,828 INFO (WebLogAspect.java:43)- IP : 0:0:0:0:0:0:0:1
+2018-10-14 11:53:04,057 INFO (WebLogAspect.java:44)- CLASS_METHOD : com.bdmc.myjpa.controller.JPAController.list
+2018-10-14 11:53:04,348 INFO (WebLogAspect.java:46)- 参数 : []
+2018-10-14 11:53:26,735 INFO (WebLogAspect.java:59)- 参数 : []
+2018-10-14 11:53:26,739 INFO (WebLogAspect.java:73)- 耗时 : 27847
+2018-10-14 11:53:26,740 INFO (WebLogAspect.java:66)- 返回值 : {"code":200,"data":[],"msg":"请求成功"}
+2018-10-14 11:54:01,484 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 826 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-14 11:54:01,485 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-14 11:54:01,485 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-14 11:54:03,017 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 1.626 seconds (JVM running for 5164.261)
+2018-10-14 11:54:04,156 INFO (MySpringMVCConfig.java:46)- 请求日志拦截：uri=/user/list, method=POST, request=0
+2018-10-14 11:54:04,178 INFO (WebLogAspect.java:41)- 请求地址 : http://localhost:8080/user/list
+2018-10-14 11:54:04,179 INFO (WebLogAspect.java:42)- HTTP METHOD : POST
+2018-10-14 11:54:05,878 INFO (WebLogAspect.java:43)- IP : 0:0:0:0:0:0:0:1
+2018-10-14 11:54:06,893 INFO (WebLogAspect.java:44)- CLASS_METHOD : com.bdmc.myjpa.controller.JPAController.list
+2018-10-14 11:54:07,298 INFO (WebLogAspect.java:46)- 参数 : []
+2018-10-14 11:54:41,943 INFO (WebLogAspect.java:60)- 参数 : []
+2018-10-14 11:54:41,966 INFO (WebLogAspect.java:74)- 耗时 : 37789
+2018-10-14 11:54:41,967 INFO (WebLogAspect.java:67)- 返回值 : {"code":200,"data":[],"msg":"请求成功"}
+2018-10-14 11:55:09,979 INFO (MySpringMVCConfig.java:46)- 请求日志拦截：uri=/user/list, method=POST, request=0
+2018-10-14 11:59:28,653 INFO (WebLogAspect.java:41)- 请求地址 : http://localhost:8080/user/list
+2018-10-14 11:59:28,654 INFO (WebLogAspect.java:42)- HTTP METHOD : POST
+2018-10-14 11:59:30,912 INFO (WebLogAspect.java:43)- IP : 0:0:0:0:0:0:0:1
+2018-10-14 11:59:30,913 INFO (WebLogAspect.java:44)- CLASS_METHOD : com.bdmc.myjpa.controller.JPAController.list
+2018-10-14 11:59:30,914 INFO (WebLogAspect.java:46)- 参数 : []
+2018-10-14 11:59:30,915 INFO (WebLogAspect.java:60)- 参数 : []
+2018-10-14 11:59:30,918 INFO (WebLogAspect.java:74)- 耗时 : 2265
+2018-10-14 11:59:30,919 INFO (WebLogAspect.java:67)- 返回值 : {"code":200,"data":[],"msg":"请求成功"}
+2018-10-14 12:01:40,629 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 826 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-14 12:01:40,630 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-14 12:01:40,630 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-14 12:01:41,988 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 1.402 seconds (JVM running for 5626.01)
+2018-10-14 12:04:03,764 INFO (MySpringMVCConfig.java:46)- 请求日志拦截：uri=/user/list, method=POST, request=0
+2018-10-14 12:04:09,769 INFO (WebLogAspect.java:41)- 请求地址 : http://localhost:8080/user/list
+2018-10-14 12:04:09,770 INFO (WebLogAspect.java:42)- HTTP METHOD : POST
+2018-10-14 12:06:51,103 INFO (WebLogAspect.java:43)- IP : 0:0:0:0:0:0:0:1
+2018-10-14 12:06:51,103 INFO (WebLogAspect.java:44)- CLASS_METHOD : com.bdmc.myjpa.controller.JPAController.list
+2018-10-14 12:06:51,104 INFO (WebLogAspect.java:46)- 参数 : []
+2018-10-14 12:06:51,105 INFO (WebLogAspect.java:60)- 参数 : []
+2018-10-14 12:06:51,119 INFO (WebLogAspect.java:74)- 耗时 : 161351
+2018-10-14 12:06:51,121 INFO (WebLogAspect.java:67)- 返回值 : {"code":200,"data":[],"msg":"请求成功"}
+2018-10-14 12:07:30,240 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 826 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-14 12:07:30,240 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-14 12:07:30,241 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-14 12:07:31,579 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 1.374 seconds (JVM running for 5975.612)
+2018-10-14 12:07:47,517 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 826 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-14 12:07:47,518 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-14 12:07:47,518 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-14 12:07:48,767 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 1.283 seconds (JVM running for 5992.8)
+2018-10-14 12:08:04,753 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 826 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-14 12:08:04,753 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-14 12:08:04,754 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-14 12:08:06,246 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 1.547 seconds (JVM running for 6010.281)
+2018-10-14 12:08:20,667 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 3065 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-14 12:08:20,669 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-14 12:08:20,673 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-14 12:08:30,677 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 10.909 seconds (JVM running for 11.816)
+2018-10-14 12:08:37,516 INFO (MySpringMVCConfig.java:46)- 请求日志拦截：uri=/user/list, method=POST, request=0
+2018-10-14 12:08:40,346 INFO (WebLogAspect.java:41)- 请求地址 : http://localhost:8080/user/list
+2018-10-14 12:08:40,347 INFO (WebLogAspect.java:42)- HTTP METHOD : POST
+2018-10-14 12:08:40,348 INFO (WebLogAspect.java:43)- IP : 0:0:0:0:0:0:0:1
+2018-10-14 12:08:40,351 INFO (WebLogAspect.java:44)- CLASS_METHOD : com.bdmc.myjpa.controller.JPAController.list
+2018-10-14 12:08:46,617 INFO (WebLogAspect.java:46)- 参数 : [{}]
+2018-10-14 12:10:42,125 INFO (WebLogAspect.java:60)- 参数 : []
+2018-10-14 12:10:42,306 INFO (WebLogAspect.java:74)- 耗时 : 121961
+2018-10-14 12:10:42,321 INFO (WebLogAspect.java:67)- 返回值 : {"code":200,"data":[],"msg":"请求成功"}
+2018-10-14 12:11:49,563 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 3065 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-14 12:11:49,564 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-14 12:11:49,565 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-14 12:11:51,871 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 2.363 seconds (JVM running for 213.016)
+2018-10-14 12:12:10,729 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 3065 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-14 12:12:10,729 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-14 12:12:10,730 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-14 12:12:12,733 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 2.054 seconds (JVM running for 233.88)
+2018-10-14 12:12:49,258 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 3194 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-14 12:12:49,260 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-14 12:12:49,267 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-14 12:12:58,310 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 9.696 seconds (JVM running for 10.305)
+2018-10-14 12:13:25,636 INFO (MySpringMVCConfig.java:46)- 请求日志拦截：uri=/user/list, method=POST, request=0
+2018-10-14 12:13:28,789 INFO (WebLogAspect.java:41)- 请求地址 : http://localhost:8080/user/list
+2018-10-14 12:13:28,790 INFO (WebLogAspect.java:42)- HTTP METHOD : POST
+2018-10-14 12:13:28,791 INFO (WebLogAspect.java:43)- IP : 0:0:0:0:0:0:0:1
+2018-10-14 12:13:28,794 INFO (WebLogAspect.java:44)- CLASS_METHOD : com.bdmc.myjpa.controller.JPAController.list
+2018-10-14 12:13:28,915 INFO (WebLogAspect.java:46)- 参数 : [{}]
+2018-10-14 12:13:28,916 INFO (WebLogAspect.java:60)- 参数 : []
+2018-10-14 12:13:29,021 INFO (WebLogAspect.java:74)- 耗时 : 233
+2018-10-14 12:13:29,027 INFO (WebLogAspect.java:67)- 返回值 : {"code":200,"data":[],"msg":"请求成功"}
+2018-10-14 12:13:38,628 INFO (MySpringMVCConfig.java:46)- 请求日志拦截：uri=/user/list, method=POST, request=0
+2018-10-14 12:13:46,627 INFO (WebLogAspect.java:41)- 请求地址 : http://localhost:8080/user/list
+2018-10-14 12:13:46,627 INFO (WebLogAspect.java:42)- HTTP METHOD : POST
+2018-10-14 12:13:46,628 INFO (WebLogAspect.java:43)- IP : 0:0:0:0:0:0:0:1
+2018-10-14 12:13:50,233 INFO (WebLogAspect.java:44)- CLASS_METHOD : com.bdmc.myjpa.controller.JPAController.list
+2018-10-14 12:13:50,689 INFO (WebLogAspect.java:46)- 参数 : [{}]
+2018-10-14 12:14:08,776 INFO (WebLogAspect.java:60)- 参数 : []
+2018-10-14 12:14:08,781 INFO (WebLogAspect.java:74)- 耗时 : 22155
+2018-10-14 12:14:08,782 INFO (WebLogAspect.java:67)- 返回值 : {"code":200,"data":[],"msg":"请求成功"}
+2018-10-14 12:14:14,015 INFO (MySpringMVCConfig.java:46)- 请求日志拦截：uri=/user/list1, method=POST, request=0
+2018-10-14 12:14:16,146 INFO (WebLogAspect.java:41)- 请求地址 : http://localhost:8080/user/list1
+2018-10-14 12:14:16,147 INFO (WebLogAspect.java:42)- HTTP METHOD : POST
+2018-10-14 12:14:16,147 INFO (WebLogAspect.java:43)- IP : 0:0:0:0:0:0:0:1
+2018-10-14 12:14:21,708 INFO (WebLogAspect.java:44)- CLASS_METHOD : com.bdmc.myjpa.controller.JPAController.list1
+2018-10-14 12:14:22,305 INFO (WebLogAspect.java:46)- 参数 : [{"name":"qwewrert"}]
+2018-10-14 12:19:03,477 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 3194 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-14 12:19:03,478 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-14 12:19:03,479 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-14 12:19:06,185 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 2.783 seconds (JVM running for 378.193)
+2018-10-14 12:19:40,320 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 3348 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-14 12:19:40,326 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-14 12:19:40,337 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-14 12:19:50,728 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 11.154 seconds (JVM running for 11.839)
+2018-10-14 12:19:59,518 INFO (MySpringMVCConfig.java:46)- 请求日志拦截：uri=/user/list0, method=POST, request=0
+2018-10-14 12:20:01,338 INFO (WebLogAspect.java:41)- 请求地址 : http://localhost:8080/user/list0
+2018-10-14 12:20:01,339 INFO (WebLogAspect.java:42)- HTTP METHOD : POST
+2018-10-14 12:20:01,340 INFO (WebLogAspect.java:43)- IP : 0:0:0:0:0:0:0:1
+2018-10-14 12:20:03,347 INFO (WebLogAspect.java:44)- CLASS_METHOD : com.bdmc.myjpa.controller.JPAController.list1
+2018-10-14 12:20:03,942 INFO (WebLogAspect.java:46)- 参数 : [{"name":"qwewrert"}]
+2018-10-14 12:20:23,153 INFO (WebLogAspect.java:60)- 参数 : [{"name":"qwewrert"}]
+2018-10-14 12:22:02,623 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 3384 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-14 12:22:02,624 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-14 12:22:02,628 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-14 12:22:12,324 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 10.321 seconds (JVM running for 11.038)
+2018-10-14 12:22:17,015 INFO (MySpringMVCConfig.java:46)- 请求日志拦截：uri=/user/list0, method=POST, request=0
+2018-10-14 12:22:19,341 INFO (WebLogAspect.java:35)- 请求地址 : http://localhost:8080/user/list0
+2018-10-14 12:22:19,342 INFO (WebLogAspect.java:36)- HTTP METHOD : POST
+2018-10-14 12:22:19,343 INFO (WebLogAspect.java:37)- IP : 0:0:0:0:0:0:0:1
+2018-10-14 12:22:20,795 INFO (WebLogAspect.java:38)- CLASS_METHOD : com.bdmc.myjpa.controller.JPAController.list1
+2018-10-14 12:22:20,860 INFO (WebLogAspect.java:40)- 参数 : [{"name":"qwewrert"}]
+2018-10-14 12:22:20,991 INFO (WebLogAspect.java:54)- 耗时 : 1651
+2018-10-14 12:22:22,520 INFO (WebLogAspect.java:47)- 返回值 : {"code":200,"data":[],"msg":"请求成功"}
+2018-10-14 22:38:25,490 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 4864 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-14 22:38:25,495 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-14 22:38:25,507 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-14 22:38:36,697 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 12.779 seconds (JVM running for 14.306)
+2018-10-14 22:39:20,472 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 4864 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-14 22:39:20,474 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-14 22:39:20,475 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-14 22:39:22,893 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 2.48 seconds (JVM running for 60.503)
+2018-10-14 22:39:34,758 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 4864 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-14 22:39:34,758 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-14 22:39:34,759 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-14 22:39:37,824 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 3.124 seconds (JVM running for 75.435)
+2018-10-14 22:44:43,890 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on DiegoMacBook.lan with PID 4864 (/Users/huanglu/git_work/spring_jpa/target/classes started by huanglu in /Users/huanglu/git_work/spring_jpa)
+2018-10-14 22:44:43,892 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-14 22:44:43,892 INFO (SpringApplication.java:680)- No active profile set, falling back to default profiles: default
+2018-10-14 22:44:45,892 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 2.05 seconds (JVM running for 383.508)

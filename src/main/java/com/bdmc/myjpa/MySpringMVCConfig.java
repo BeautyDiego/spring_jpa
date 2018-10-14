@@ -9,13 +9,9 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistration
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import com.bdmc.myjpa.Utils.*;
-import io.jsonwebtoken.Claims;
-
-import com.bdmc.myjpa.Utils.*;
-
+import com.alibaba.fastjson.JSON;
 import java.io.IOException;
 import java.io.PrintWriter;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -40,30 +36,22 @@ public class MySpringMVCConfig implements WebMvcConfigurer {
 
         @Override
         public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
-            System.out.print("prehandle");
-            /*
-             * Object user = request.getSession().getAttribute("user"); if (user == null) {
-             * try { response.sendRedirect("/login"); } catch (IOException e) {
-             * e.printStackTrace(); } return false;
-             * 
-             * } return true;
-             */
+           
             boolean handleResult = false;
 
             String token = request.getHeader("token");
-            if (token == null || token.isEmpty()) {
+            if (token == null || token.isEmpty()) {//   fanhui 401
                 PrintWriter writer = null;
                 response.setCharacterEncoding("UTF-8");
                 response.setContentType("text/html; charset=utf-8");
-                response.setStatus(response.SC_UNAUTHORIZED);
+                response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
                 
                 try {
                     writer = response.getWriter();
                     String error = "token信息有误";
                     Msg m = ResultUtil.error(-1, error);
-                    writer.print(m.toString());
-                    return false;
-
+                    writer.print(JSON.toJSONString(m));
+                    return handleResult;
                 } catch (IOException e) {
                     logger.error("response error", e);
                 } finally {
@@ -72,8 +60,8 @@ public class MySpringMVCConfig implements WebMvcConfigurer {
                 }
             }
 
-            boolean c = WebTokenUtil.validateJWT(token);
-            return true;
+            handleResult = WebTokenUtil.validateJWT(token);
+            return handleResult;
         }
 
         @Override
@@ -85,7 +73,8 @@ public class MySpringMVCConfig implements WebMvcConfigurer {
         @Override
         public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler,
                 Exception ex) {
-            // 页面渲染完毕后调用此方法
+            // 页面渲染完毕后调用此方法_
+            //request.getAttribute(LOGGER_)
         }
 
     }
